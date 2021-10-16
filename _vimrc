@@ -18,6 +18,7 @@ Plugin 'preservim/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'airblade/vim-gitgutter'
 
 
 call vundle#end()
@@ -47,10 +48,11 @@ set so=8
 set sidescrolloff=5
 syntax enable
 set backspace=2
-set guifont=Consolas:h11
+set guifont=Fira_Code:h11
 set laststatus=2 " Always display the status bar.
 set wildmenu
 set ruler
+set guioptions -=T
 
 set guicursor=n-v-c:block-Cursor
 set guicursor+=n-v-c:blinkon0
@@ -66,7 +68,7 @@ vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 
 " Open new tab
 nmap <C-t> :tabe<CR>
-nmap <C-w> :tabclose<CR>
+"nmap <C-w> :tabclose<CR>
 nmap <C-Tab> :tabnext<CR>
 nmap <C-S-Tab> :tabnext<CR>
 
