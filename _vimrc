@@ -19,6 +19,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ryanoasis/vim-devicons'
 
 
 call vundle#end()
@@ -28,6 +29,7 @@ filetype plugin indent on
 colorscheme gruvbox
 set background=dark
 
+set encoding=UTF-8
 
 set autoindent
 set autoindent
@@ -48,7 +50,7 @@ set so=8
 set sidescrolloff=5
 syntax enable
 set backspace=2
-set guifont=Fira_Code:h11
+set guifont=FiraCode\ Nerd\ Font\ Mono:h11
 set laststatus=2 " Always display the status bar.
 set wildmenu
 set ruler
@@ -62,9 +64,12 @@ set guicursor+=n-v-c:blinkon0
 inoremap jk <ESC>
 inoremap kj <ESC>
 
-nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-b> :NERDTreeToggle<CR>
 nmap <C-_>   <Plug>NERDCommenterToggle
 vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
+
+" create new file in current directory
+nmap <C-n> :e %:h/
 
 " Open new tab
 nmap <C-t> :tabe<CR>
@@ -92,4 +97,8 @@ let g:coc_global_extensions = [
   \ 'coc-eslint', 
   \ 'coc-prettier', 
   \ 'coc-json', 
+  \ 'coc-emmet', 
+  \ 'coc-css', 
+  \'coc-html', 
   \ ]
+
