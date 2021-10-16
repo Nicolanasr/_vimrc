@@ -9,8 +9,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'morhetz/gruvbox'
-Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'joshdick/onedark.vim'
+Plugin 'sheerun/vim-polyglot' "syntax highlighting better for onedark 
 Plugin 'scrooloose/nerdtree'
+"Plugin 'HerringtonDarkholme/yats.vim'
 "Plug 'tsony-tsonev/nerdtree-git-plugin'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -26,8 +28,8 @@ call vundle#end()
 filetype plugin indent on
 
 " adding the gruvbox theme
-colorscheme gruvbox
-set background=dark
+colorscheme onedark
+"set background=dark
 
 set encoding=UTF-8
 
