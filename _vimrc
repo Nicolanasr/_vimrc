@@ -1,4 +1,5 @@
 set nocompatible
+
 syntax on
 filetype off
 
